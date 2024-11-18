@@ -98,7 +98,7 @@ const styles = {
   },
   link: {
     textDecoration: "none",
-    color: "#4caf50",
+    color: "#007bff",
     fontWeight: "bold",
   },
 };

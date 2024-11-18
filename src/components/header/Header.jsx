@@ -6,14 +6,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="logo">Hotel Booking System</h1>
+        {/* <h1 className="logo">Hotel Booking System</h1> */}
         <nav className="nav">
           <ul>
             <li>
-              <Link to="/">Форма бронирования</Link>
+              <Link to="/">Booking Form</Link>
             </li>
             <li>
-              <Link to="/admin">Панель администратора</Link>
+              <Link to="/admin">Admin Panel</Link>
             </li>
           </ul>
         </nav>
