@@ -122,6 +122,7 @@ const styles = {
     textAlign: "start",
     color: "#ffff",
     fontSize: "25px",
+    fontWeight: "bold",
     marginLeft: "400px"
 
   },
@@ -129,6 +130,7 @@ const styles = {
     textAlign: "start",
     color: "#ffff",
     fontSize: "25px",
+    fontWeight: "bold",
     marginLeft: "200px"
   
   },
