@@ -24,10 +24,17 @@ const BookingForm = () => {
   };
 
   return (
+    <>
     <div style={styles.container}>
-      <h1 style={styles.title}>Welcome to our hotel</h1>
-      <p style={styles.description}>We offer the best service and comfort to our guests</p>
-    <form onSubmit={handleSubmit} style={styles.form}>
+      <h1 style={styles.title}>Experience Luxury <br /> and <br /> Comfort in Every Stay</h1>
+        <ul style={styles.list}>
+          <li style={styles.description}>Luxurious Rooms with Scenic Views</li>
+          <li style={styles.description1}>Fine Dining and Local Cuisine</li>
+          <li style={styles.description2}>Free Wi-Fi and Business Center</li>
+      </ul>
+    
+      </div>
+      <form id="booking-form" onSubmit={handleSubmit} style={styles.form}>
       <h2 style={styles.heading}>Hotel Booking</h2>
       <div style={styles.formGroup}>
         <label style={styles.label}>
@@ -85,7 +92,8 @@ const BookingForm = () => {
       <button type="submit" style={styles.button}>
         Submit Booking
       </button>
-    </form></div>
+    </form>
+      </>
   );
 };
 
@@ -102,17 +110,38 @@ const styles = {
     alignItems: "center",
   },
   title: {
+    marginTop: "100px",
     textAlign: "center",
     color: "#ffff",
+    fontSize: "58px"
+  },
+  list: {
+    marginLeft: "25%",
   },
   description: {
-    textAlign: "center",
+    textAlign: "start",
     color: "#ffff",
-    fontSize: "19px"
+    fontSize: "25px",
+    marginLeft: "400px"
+
+  },
+  description1: {
+    textAlign: "start",
+    color: "#ffff",
+    fontSize: "25px",
+    marginLeft: "200px"
+  
+  },
+  description2: {
+    textAlign: "start",
+    color: "#ffff",
+    fontSize: "25px",
+    fontWeight: "bold",
+    marginRight: "400px",
   },
   form: {
     maxWidth: "400px",
-    margin: "0 auto",
+    margin: "220px auto",
     padding: "20px",
     border: "1px solid #ddd",
     borderRadius: "8px",

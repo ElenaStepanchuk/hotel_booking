@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { useParams, useNavigate } from "react-router-dom"; // Импортируем useNavigate
+import { useParams, useNavigate } from "react-router-dom"; 
 
 const Invoice = () => {
-  const { bookingId } = useParams(); // Получение ID заявки из URL
+  const { bookingId } = useParams(); 
   const booking = useSelector((state) =>
     state.bookings.find((b) => b.id === parseInt(bookingId))
   );
-  const navigate = useNavigate(); // Создаем navigate для перехода
+  const navigate = useNavigate(); 
 
   if (!booking) {
     return (
@@ -54,7 +54,7 @@ const Invoice = () => {
 const styles = {
   container: {
     maxWidth: "600px",
-    margin: "30px auto",
+    margin: "100px auto",
     padding: "20px",
     backgroundColor: "#f9f9f9",
     borderRadius: "10px",

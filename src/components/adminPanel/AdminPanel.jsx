@@ -59,7 +59,7 @@ const AdminPanel = () => {
 const styles = {
   container: {
     maxWidth: "800px",
-    margin: "0 auto",
+    margin: "100px auto",
     padding: "20px",
     backgroundColor: "#f9f9f9",
     borderRadius: "8px",

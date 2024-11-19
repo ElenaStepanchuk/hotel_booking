@@ -3,14 +3,20 @@ import { Link } from "react-router-dom";
 import "./Header.css"; 
 
 const Header = () => {
+
+  const scrollToForm = () => {
+    const formElement = document.getElementById("booking-form");
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <header className="header">
       <div className="container">
-        {/* <h1 className="logo">Hotel Booking System</h1> */}
-        <nav className="nav">
+         <nav className="nav">
           <ul>
             <li>
-              <Link to="/">Booking Form</Link>
+              <Link to="/" onClick={scrollToForm}>Booking Form</Link>
             </li>
             <li>
               <Link to="/admin">Admin Panel</Link>
